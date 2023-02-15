@@ -10,7 +10,7 @@ exports.handler = async (event, context, callback) => {
   try {
     /* Send email to recicipent */
     response = await mailgun.messages().send({
-      to: data.to,
+      to: 'maormarhum9400@gmail.com',
       from: data.from,
       subject: data.subject,
       text: data.text,
